@@ -1,64 +1,64 @@
 {
   "active": true,
-  "hostname": "rdpfree-10",
+  "hostname": "rdpfree-11",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 29.7,
+    "ram_gb": 16.0,
     "cpu_threads": 4,
-    "ram_gb": 16.0
+    "disk_free_gb": 29.7
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-17T14:23:25Z",
-  "expires_at": "2026-11-17T20:05:25Z",
+  "started_at": "2026-11-17T22:00:22Z",
+  "expires_at": "2026-11-18T03:42:22Z",
   "duration_menit": 342,
-  "run_id": "44102322512",
+  "run_id": "44185514955",
   "run_attempt": "1",
-  "run_number": "10",
-  "run_url": "https://github.com/nexufires/XyRDP/actions/runs/44102322512",
+  "run_number": "11",
+  "run_url": "https://github.com/nexufires/XyRDP/actions/runs/44185514955",
   "mode": "bersih+win10",
   "runtimes": {
+    "vc2008x64": "dilewati (mode cepat)",
+    "directx9": "ok",
     "vc2022x64": "sudah ada",
     "vc2022x86": "sudah ada",
-    "vc2005x64": "dilewati (mode cepat)",
     "net35": "dilewati (mode cepat)",
-    "vc2008x64": "dilewati (mode cepat)",
-    "directx9": "ok"
+    "vc2005x64": "dilewati (mode cepat)"
   },
   "persist": {
-    "profile": "C:\\Users\\xyadmin",
-    "restored": true,
     "source": "xyrdp-state.7z.enc",
-    "files": 336
+    "restored": true,
+    "files": 336,
+    "profile": "C:\\Users\\xyadmin"
   },
   "storage": {
     "status": "ok",
     "mode": "boost-ringan",
-    "before_gb": 29.11,
-    "after_gb": 42.51,
-    "gained_gb": 13.4,
-    "removed_targets": 23,
+    "before_gb": 29.18,
+    "after_gb": 46.76,
+    "gained_gb": 17.58,
+    "removed_targets": 31,
     "drives": [
       {
-        "used_gb": 107.37,
+        "size_gb": 149.89,
         "letter": "C",
-        "free_gb": 42.51,
-        "size_gb": 149.89
+        "free_gb": 46.76,
+        "used_gb": 103.12
       },
       {
-        "used_gb": 3.01,
+        "size_gb": 150.0,
         "letter": "D",
-        "free_gb": 146.98,
-        "size_gb": 150.0
+        "free_gb": 146.99,
+        "used_gb": 3.01
       }
     ],
     "game_dir": "D:\\Games (disarankan untuk GTA)",
     "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa.",
-    "updated_at": "2026-11-17T14:37:43.3109713Z"
+    "updated_at": "2026-11-17T22:06:34.7713584Z"
   },
   "fps_boost": {
     "status": "ok",
@@ -74,9 +74,9 @@
     ],
     "skipped": [],
     "applied_count": 8,
-    "elapsed_sec": 2.5,
+    "elapsed_sec": 2.2,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-17T14:37:46.2746907Z"
+    "updated_at": "2026-11-17T22:06:37.5158024Z"
   },
   "win10": {
     "look": "ok",
@@ -93,18 +93,18 @@
     "microphone": "rdp_capture_enabled"
   },
   "grafis": {
-    "mesa": "26.2.7",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "vulkan": "lavapipe 1.3 (CPU)",
     "mode": "software",
-    "adapters": "Microsoft Hyper-V Video"
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
+    "adapters": "Microsoft Hyper-V Video",
+    "mesa": "26.2.7",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64"
   },
   "native_core": {
     "csharp_mac_launcher": "ok",
-    "c_booster": "ok",
-    "cpp_grafis_check": "ok",
-    "rust_probe": "ok",
+    "c_booster": "skip",
+    "cpp_grafis_check": "skip",
+    "rust_probe": "skip",
     "mac_autostart": false
   },
   "extras": {
@@ -115,6 +115,12 @@
     "vscode": "skip",
     "notepadpp": "skip",
     "admin": true
+  },
+  "studio_3d": {
+    "blender": "ok",
+    "roblox_studio": "ok",
+    "webview2": "sudah ada",
+    "ffmpeg": "ok"
   },
   "xydesk": {
     "host": "ok",
@@ -134,21 +140,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "tunnel": {
-      "host": "100.86.174.90",
-      "selftest": "ok",
-      "address": "100.86.174.90:3389",
-      "port": 3389,
+    "tailscale": {
+      "magicdns": "rdpfree.tail40f01c.ts.net.",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "status": "ok",
-      "outside": "tailscale"
+      "ip": "100.107.11.87",
+      "hostname": "rdpfree"
     },
     "mode": "tailscale",
-    "tailscale": {
+    "tunnel": {
       "status": "ok",
-      "ip": "100.86.174.90",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree",
-      "magicdns": "rdpfree-4.tail40f01c.ts.net."
+      "selftest": "ok",
+      "port": 3389,
+      "host": "100.107.11.87",
+      "address": "100.107.11.87:3389",
+      "outside": "tailscale"
     }
   }
 }
